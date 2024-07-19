@@ -1,0 +1,19 @@
+def solution(players, callings):  
+    n = len(callings)
+    for i in range(n):
+        name = callings[i] # 부르는 선수 이름
+        num = players.index(name) #부른 선수 이름의 위치 찾음
+        tmp = players[num]
+        players[num] = players[num-1] #위치 바꾸기
+        players[num-1] = tmp
+        
+    return players
+
+def main():
+    players = ["mumu", "soe", "poe", "kai", "mine"]
+    callings = ["kai", "kai", "mine", "mine"]
+
+    print(solution(players, callings))
+    
+main()
+
