@@ -1,0 +1,16 @@
+def solution(name, yearning, photo):
+    answer = []
+    nameNum = len(name)
+    score = {name[i] : yearning[i] for i in range(nameNum)}
+    
+    photoCnt = len(photo) #2차원 행 개수
+    
+    for i in range(photoCnt):
+        sum = 0
+        for j in range(len(photo[i])):
+            if photo[i][j] in nameNum:
+                sum += score[photo[i][j]]
+        answer.append(sum)
+        
+    return answer
+  
