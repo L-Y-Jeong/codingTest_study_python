@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-# Algorithm_group_study
-
-(231123 ~ ing)
-=======
-# codingTest_study_python
->>>>>>> 90905bf0671587aea4c36f274db97bba1b3e7a49
+- 코딩 스터디
+- 프로그래머스와 백준 병행
+- 파이썬 사용
