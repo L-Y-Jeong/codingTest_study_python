@@ -1,0 +1,11 @@
+def solution(s):
+    answer = [-1] * len(s)
+    alph = [-1] * 26
+    for i in range(len(s)):
+        n = ord(s[i])- ord('a')
+        if alph[n] != -1:
+            answer[i] = i - alph[n]  
+        alph[n] = i
+        
+        
+    return answer
